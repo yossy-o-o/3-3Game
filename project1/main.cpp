@@ -4,6 +4,7 @@
 //2, window‚ðŠJ‚«‘±‚¯‚é
 //3, ‚¢‚Á‚½‚ñ~‰Ÿ‚µ‚½‚ç•Â‚¶‚é‚æ‚¤‚É‚·‚é
 //4, window‘S‘Ì‚ð”’‚É“h‚è‚Â‚Ô‚·
+//5, 
 
 #include <SFML/Graphics.hpp>
 
