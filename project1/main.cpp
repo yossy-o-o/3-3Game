@@ -4,12 +4,14 @@
 //2, windowを開き続ける
 //3, いったん×押したら閉じるようにする
 //4, window全体を白に塗りつぶす
-//5, 
+//5, クリック処理を実装する
+//6. クリックしたら〇を出す
 
 #include <SFML/Graphics.hpp>
 
 void graphics(sf::RenderWindow& window);
 
+//ピクセルに表示する関数
 int main()
 {
 	sf::RenderWindow window(sf::VideoMode(600, 600), "〇×ゲーム");
@@ -37,9 +39,11 @@ int main()
 //3 * 3の線を出力する関数
 void graphics(sf::RenderWindow& window)
 {
+	//横線の長さと厚み
 	sf::RectangleShape line(sf::Vector2f(600, 5));
 	line.setFillColor(sf::Color::Black);
 
+	//iに200を乗算することで、200ピクセルごとに縦に線を引いている
 	for (int i = 1; i <= 2; i++)
 	{
 		line.setSize(sf::Vector2f(600, 5));
@@ -47,10 +51,12 @@ void graphics(sf::RenderWindow& window)
 		window.draw(line);
 	}
 
+	//同じく横線
 	line.setSize(sf::Vector2f(5, 600));
-	for (int i = 1; i <=2; i++)
+	for (int i = 1; i <= 2; i++)
 	{
 		line.setPosition(i * 200, 0);
 		window.draw(line);
 	}
 }
+
