@@ -1,4 +1,4 @@
 ﻿  main.cpp
-C:\Users\chara\source\repos\project1\project1\main.cpp(23,35): warning C4244: '引数': 'int' から 'float' への変換です。データが失われる可能性があります。
-C:\Users\chara\source\repos\project1\project1\main.cpp(30,32): warning C4244: '引数': 'int' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\chara\source\repos\project1\project1\main.cpp(45,25): warning C4244: '引数': 'int' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\chara\source\repos\project1\project1\main.cpp(52,22): warning C4244: '引数': 'int' から 'float' への変換です。データが失われる可能性があります。
   project1.vcxproj -> C:\Users\chara\source\repos\project1\x64\Debug\project1.exe
