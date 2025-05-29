@@ -10,6 +10,10 @@
 #include <SFML/Graphics.hpp>
 
 void graphics(sf::RenderWindow& window);
+void placeCircleOnClick(sf::RenderWindow& window, int board[3][3]);
+
+
+int board[3][3] = { 0 };
 
 //ピクセルに表示する関数
 int main()
@@ -30,6 +34,7 @@ int main()
 
 		window.clear(sf::Color::White);
 		graphics(window);
+		placeCircleOnClick(window, board);
 		window.display();
 	}
 
@@ -58,5 +63,44 @@ void graphics(sf::RenderWindow& window)
 		line.setPosition(i * 200, 0);
 		window.draw(line);
 	}
+
+
+	for (int row = 0; row < 3; ++row)
+	{
+		for (int col = 0; col < 3; ++col)
+		{
+			if (board[row][col] == 1)
+			{
+				sf::CircleShape circle(60);
+				circle.setFillColor(sf::Color::Transparent);
+				circle.setOutlineColor(sf::Color::Red);
+				circle.setOutlineThickness(5);
+				circle.setPosition(col * 200 + 40, row * 200 + 40);
+				window.draw(circle);
+			}
+		}
+	}
 }
+
+//クリックで〇を表示
+void placeCircleOnClick(sf::RenderWindow& window, int board[3][3])
+{
+	if (sf::Mouse::isButtonPressed(sf::Mouse::Left)) //左クリックしてたら
+	{
+		sf::Vector2i mousePos = sf::Mouse::getPosition(window);
+
+		int col = mousePos.x / 200;
+		int row = mousePos.y / 200;
+
+		if (col >= 0 && col < 3 && row >= 0 && row < 3)
+		{
+			if (board[row][col] == 0)
+			{
+				board[row][col] = 1;
+			}
+		}
+
+	}
+}
+
 
