@@ -67,9 +67,10 @@ void graphics(sf::RenderWindow& window)
 		window.draw(line);
 	}
 
-
+	//縦が3本の場合True
 	for (int row = 0; row < 3; ++row)
 	{
+		//横3本の場合True
 		for (int col = 0; col < 3; ++col)
 		{
 			if (board[row][col] == 1)
@@ -90,9 +91,9 @@ void placeCircleOnClick(sf::RenderWindow& window, int board[3][3])
 {
 	if (sf::Mouse::isButtonPressed(sf::Mouse::Left)) //左クリックしてたら
 	{
-		sf::Vector2i mousePos = sf::Mouse::getPosition(window);
+		sf::Vector2i mousePos = sf::Mouse::getPosition(window);//Vector2iで、2次元ベクトル取得
 
-		int col = mousePos.x / 200;
+		int col = mousePos.x / 200; //ピクセルは600なので、200ずつに割って、そこにしか置けないように
 		int row = mousePos.y / 200;
 
 		if (col >= 0 && col < 3 && row >= 0 && row < 3)
