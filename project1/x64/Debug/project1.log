@@ -1,6 +1,8 @@
 ﻿  main.cpp
-C:\Users\chara\source\repos\project1\project1\main.cpp(55,25): warning C4244: '引数': 'int' から 'float' への変換です。データが失われる可能性があります。
-C:\Users\chara\source\repos\project1\project1\main.cpp(63,22): warning C4244: '引数': 'int' から 'float' への変換です。データが失われる可能性があります。
-C:\Users\chara\source\repos\project1\project1\main.cpp(78,50): warning C4244: '引数': 'int' から 'float' への変換です。データが失われる可能性があります。
-C:\Users\chara\source\repos\project1\project1\main.cpp(78,34): warning C4244: '引数': 'int' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\chara\source\repos\project1\project1\main.cpp(65,31): warning C4244: '引数': 'int' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\chara\source\repos\project1\project1\main.cpp(73,28): warning C4244: '引数': 'int' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\chara\source\repos\project1\project1\main.cpp(89,62): warning C4244: '引数': 'int' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\chara\source\repos\project1\project1\main.cpp(89,46): warning C4244: '引数': 'int' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\chara\source\repos\project1\project1\main.cpp(103,31): warning C4244: '初期化中': 'int' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\chara\source\repos\project1\project1\main.cpp(104,31): warning C4244: '初期化中': 'int' から 'float' への変換です。データが失われる可能性があります。
   project1.vcxproj -> C:\Users\chara\source\repos\project1\x64\Debug\project1.exe
